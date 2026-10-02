@@ -37,7 +37,7 @@
   <div class="mx-5">
     <!-- Main content -->
     <main>
-      <h1 style="text-align: center">
+      <h1 class="justify-content-center">
         Namaste Everyone, I am Saroj Kumar Mahto.
       </h1>
 
@@ -61,6 +61,8 @@
         <li>I can hold frog stand (3 x 1 min) </li>
         <li>I can do Bakasana for almost 10 - 20 sec which is foundation of planche.</li>
         <li>i can do tucked planche for 5 sec.</li>
+        <li>Current Goal at this time <b><span class="live-clock text-info"></span></b>
+          in push category is <b>Handstand push ups</b></li>
       </ul>
 
       <h2>
@@ -75,7 +77,8 @@
         <li>Skin the cat (3 X 4-5)</li>
         <li>Front lever tucked (3 X 15 - 20 sec)</li>
         <li>Back lever tucked (3 X 15 - 20 sec)</li>
-        <li>Currently <b>my goal</b> in pull is to achieve the <b>Back lever</b> and <b>Front lever</b></li>
+        <li>Currently <b>my goal</b> at this time <b><span class="live-clock text-info"></span></b>
+          in pull is to achieve the <b>Back lever</b> and <b>Front lever</b></li>
       </ul>
 
       <h2>
@@ -85,13 +88,43 @@
         <li>Normal squats </li>
         <li>Hamstring curls </li>
         <li>Desi baithak </li>
+        <li>Bularian Split</li>
+        <li>Lunges</li>
         <li>Side deep lunges (3 x 25 each leg) </li>
         <li>Weighted barbell squats (3 x 10 - 12) with 40 - 50 kg </li>
-        <li>Goal is to achieve the <b>Pisol Squat</b>
+        <li>My current Goal at this time <b><span class="live-clock text-info"></span></b> for leg is to achieve the <b>Pisol Squat</b>
         </li>
+      </ul>
+
+      <h2>
+        Core exercises I do
+      </h2>
+      <ul>
+        <li>Hollow body hold (3 x 45 sec) </li>
+        <li>L-sit (3 x 15 sec) </li>
+        <li>Plank (3 x 1.5 min) </li>
+        <li>One legged dragon flag (3 x 6-8 each leg) </li>
+        <li>Dragon flag (3 x 2 - 4) </li>
+        <li>Dragon flag hold (3 x 15 sec) </li>
+        <li>Hanging leg raise (3 x 10-12)</li>
+        <li>Hanging L-sit (3 x 10-15 sec)</li>
+        <li>For core, my current Goal at this time <b><span class="live-clock text-info"></span></b> is to achieve the <b>Dragon flag (3 x 12)</b></li>
       </ul>
     </main>
   </div>
+
+  <script>
+    function updateClock() {
+      const currentTime = new Date().toLocaleTimeString();
+
+      document.querySelectorAll(".live-clock").forEach(element => {
+        element.textContent = currentTime;
+      });
+    }
+
+  setInterval(updateClock, 1000);
+  updateClock();
+  </script>
 </body>
 
 </html>
